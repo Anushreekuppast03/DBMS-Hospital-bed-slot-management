@@ -1,0 +1,70 @@
+{% extends 'baselogin.html' %}
+{% block title %} Patient details{% endblock title %}
+{% block form %}
+
+
+<div class="row">
+<div class="col-md-4"></div>
+
+<div class="col-md-4">
+
+
+<br>
+<br>
+<h1>Patient Details</h1>
+<div class="card p-3">
+
+<table class="table table-dark">
+  <thead>
+  <tr>
+  <th scope="col">PATIENT DETAILS</th>
+   </tr>
+<tr>
+     <th scope="col">srfid:  {{data.srfid}}</th>
+</tr>
+</tr>
+<th scope="col">Patient name:  {{data.pname}}</th>
+</tr>
+<tr>
+
+      <th scope="col">Bedtype:  {{data.bedtype}}</th>
+</tr>
+
+<tr>
+
+      <th scope="col">Hospital code:  {{data.hcode}}</th>
+</tr>
+
+<tr>
+      <th scope="col">Oxygen level:  {{data.spo2}}</th>
+
+<tr>
+
+      <th scope="col">Patient phone no:  {{data.pphone}}</th>
+    </tr>
+
+     <tr> 
+      <th scope="col">Patient address:  {{data.paddress}}</th>
+</tr>
+
+
+ 
+
+
+  </thead>
+
+
+      
+   
+    
+
+
+
+
+</div>
+</div>
+<div class="col-md-4"></div>
+
+</div>
+{% endblock form %}
+
